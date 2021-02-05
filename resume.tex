@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=1.35in,top=0.9in,right=0.75in,bottom=0.9in]{geometry} % Document margins
+
+%\usepackage[all]{background}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage{rotating}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{datetime}
+
+\name{IAAAlejandro León Pereira} % Your name
+\address{Oviedo, Asturias 33001} % Your address
+\address{(+34)~$\cdot$~673~$\cdot$~803~$\cdot$~943 \\ alexleonper@gmail.com} % Your phone number and email
+
+
+\begin{document}
+\smash{\includegraphics[width=3cm]{foto.png}}
+%----------------------------------------------------------------------------------------
+%	INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\def\pictureOne{\framebox{{\Huge {\bf EN}}}}
+\def\pictureTwo{\begin{turn}{90} 
+    {\scriptsize {\bf Version Code:} \pdfdate}
+    \end{turn}
+    \begin{turn}{90}
+    {\scriptsize {\bf Last Version:} \url{https://github.com/alexl0/resume}}
+    \end{turn}
+    }
+
+
+\pagestyle{fancy}
+
+\def\headrulewidth{0pt}
+\newlength{\ruleheight}
+\setlength{\ruleheight}{\textheight}
+\addtolength{\ruleheight}{20mm}
+\fancyhead{}
+\fancyhead[L]{%
+    \vbox to 0pt{%
+    \vskip 5mm \hbox{%
+        \hskip-5mm\vrule height\ruleheight%
+        \hskip-25mm\vbox to \ruleheight{\pictureOne\vss\pictureTwo}
+        }%
+        \vss}}
+\fancyfoot{}
+\fancyfoot[C]{\footnotesize\thepage}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf IES Virgen de La Luz, Asturias} \hfill {\em June 2016} \\ 
+High School degree with specialization in Science and Technology \\
+Rounded Mark: 7
+
+{\bf University of Oviedo, Asturias} \hfill {\em July 2021} \\ 
+Software Engineering Degree \\
+Rounded Mark: 7
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Languages}
+
+{\bf Spanish} \hfill {\em Mother Language}\\ 
+Writing Level: Native \\
+Reading Level: Native \\
+Speaking Level: Native \\
+
+{\bf English (FCE)} \\ 
+Writing Level: Bilingual \\
+Reading Level: Bilingual \\
+Speaking Level: Bilingual \\
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	LICENSES SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Licenses}
+
+{\bf European car driving license} \hfill {\em 14 points}\\ 
+License: B \hfill {\em 26.10.16} \\
+License: AM \hfill {\em 12.7.19} \\
+License: A1 \hfill {\em 12.7.19} \\
+License: A2 \hfill {\em 12.7.19} \\
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TITLES SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Titles}
+
+{\bf First Certificate in English} \\ 
+Overall Score: 177 \hfill {\em 01.09.20} \\
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+%------------------------------------------------
+
+\begin{rSubsection}{University of Oviedo}{September 2019 - September 2020}{Software Intern}{Asturias, Spain}
+\item Technical assistance for professors at the Faculty of Biology.
+\item Sound and video assistance during Faculty of Biology events.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & Java, HTML, CSS, JavaScript, Node, Spring, C, C++,\\&ElasticSearch, JPA, JDBC \\
+Protocols \& APIs & XML, JSON, REST, SSH \\
+Databases & MySQL, PostgreSQL, MongoDB, Neo4J,\\
+Tools & Git, Eclipse, Vim \\
+OS & CentOS, Ubuntu, Debian, Windows, Windows Server \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ABOUT ME SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{About me}
+
+I'm a final year student of Software Engineering Degree at University of Oviedo.
+I especially enjoy databases and software development in general, no matter what language or framework, it's nice to learn new things.
+I'm used to working under agile methodologies, handling multiple task at the same time.
+
+I would like to bring creativity to the team, as well as not just software, but personal development.
+
+Whether it's about public speaking or presentations, development or project management, I always manage to handle myself doing my best.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ABOUT ME SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Contact}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Phone & 673803943 \\
+Gmail & alexleonper@gmail.com \\
+UniOvi & uo258774@uniovi.es \\
+GitHub & \href{https://github.com/alexl0}{alexl0} \\
+Linkedin & \href{https://www.linkedin.com/in/leonper/}{leonper} \\
+Instagram & \href{https://www.instagram.com/alexleonpereira}{alexleonpereira} \\
+\end{tabular}
+\end{rSection}
+
+
+\end{document}
