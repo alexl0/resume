@@ -22,7 +22,7 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=1.35in,top=0.9in,right=0.75in,bottom=0.9in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.9in,right=0.75in,bottom=0.9in]{geometry} % Document margins
 
 %\usepackage[all]{background}
 \usepackage{lipsum}
@@ -32,25 +32,18 @@
 \usepackage[colorlinks=true, urlcolor=blue]{hyperref}
 \usepackage{datetime}
 
-\name{IAAAlejandro León Pereira} % Your name
-\address{Oviedo, Asturias 33001} % Your address
-\address{(+34)~$\cdot$~673~$\cdot$~803~$\cdot$~943 \\ alexleonper@gmail.com} % Your phone number and email
-
+\name{~~~~    Alejandro León Pereira} % Your name
+\address{~Oviedo, Asturias \\ Coche propio} % Your address
+\address{~673 80 39 43 \\ alexleonper@gmail.com} % Your phone number and email
+\address{~\href{https://www.linkedin.com/in/leonper/}{Linkedin} \href{https://github.com/alexl0}{GitHub}}
 
 \begin{document}
-\smash{\includegraphics[width=3cm]{cv2.JPG}}
+\smash{\includegraphics[width=3.4cm]{cv2.JPG}}
 %----------------------------------------------------------------------------------------
 %	INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-\def\pictureOne{\framebox{{\Huge {\bf ES}}}}
-\def\pictureTwo{\begin{turn}{90} 
-    {\scriptsize {\bf Version Code:} \pdfdate}
-    \end{turn}
-    \begin{turn}{90}
-    {\scriptsize {\bf Last Version:} \url{https://github.com/alexl0/resume}}
-    \end{turn}
-    }
+
 
 
 \pagestyle{fancy}
@@ -78,10 +71,7 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Educación}
-
-{\bf Ingeniería Informática del Software, Universidad de Oviedo, Asturias} \hfill {\em Septiembre 2016 - Junio 2022} \\ 
-Nota media: 7
-
+{\bf Ingeniería Informática del Software, Universidad de Oviedo} \hfill {\em Septiembre 2016 - Junio 2022} \\ 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -89,36 +79,15 @@ Nota media: 7
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Idiomas}
-
-{\bf Inglés} \hfill {\em (Cambridge: First Certificate in English)}\\
-Nivel: Bilingue \\
+{\bf Inglés (Cambridge: First Certificate in English)} \hfill \\
+Bilingue \\
 {\bf Español} \\
-Nivel: Nativo \\
-\end{rSection}
-%----------------------------------------------------------------------------------------
-%	LICENSES SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Licencias}
-{\bf Permiso de conducción europeo} \hfill {\em 14 puntos}\\ 
-Licencia: B \hfill {\em 26.10.16} \\
-Licencia: AM, A1, A2 \hfill {\em 12.7.19} \\
-
+Nativo \\
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	TITLES SECTION
 %----------------------------------------------------------------------------------------
-
-\begin{rSection}{Títulos}
-
-{\bf First Certificate in English} \\ 
-Nota media: 177 \hfill {\em 01.09.20} \\
-
-{\bf Ingeniería Informática del Software, Universidad de Oviedo, Asturias} \\
-Nota media: 7 \hfill {\em Septiembre 2016 - Junio 2022} \\ 
-
-
-\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -127,18 +96,16 @@ Nota media: 7 \hfill {\em Septiembre 2016 - Junio 2022} \\
 \begin{rSection}{Experiencia laboral}
 
 %------------------------------------------------
-
-\begin{rSubsection}{Universidad de Oviedo}{Septiembre 2019 - Octubre 2020}{Software Intern}{Asturias, España}
-\item Asistencia técnica a profesores y residentes de la Universidad de Oviedo.
+\begin{rSubsection}{CDS Spain, a Hewlett Packard Enterprise company}{Septiembre 2022 - Actual}{Desarrollador Java Back-end}{León, España}
+\item Desarrollo y mantenimiento de aplicaciones Java para clientes internacionales.
 \end{rSubsection}
 
-\begin{rSubsection}{Seresco}{Noviembre 2020 - Abril 2022}{Desarrollador Full-Stack}{Asturias, España}
-\item Área de Software y Consultoría.
+\begin{rSubsection}{Seresco}{Noviembre 2020 - Abril 2022}{Desarrollador Full-Stack (Área de Software y Consultoría)}{Asturias, España}
 \item Desarrollo y mantenimiento de proyectos basados en Angular y .NET para el cliente AcerlorMittal.
 \end{rSubsection}
 
-\begin{rSubsection}{CDS Spain, a Hewlett Packard Enterprise company}{Septiembre 2022}{Desarrollador Java Back-end}{León, España}
-\item Desarrollo y mantenimiento de aplicaciones Java para clientes internacionales.
+\begin{rSubsection}{Universidad de Oviedo}{Septiembre 2019 - Octubre 2020}{Software Intern}{Asturias, España}
+\item Asistencia técnica a profesores y residentes de la Universidad de Oviedo.
 \end{rSubsection}
 
 \end{rSection}
@@ -147,21 +114,11 @@ Nota media: 7 \hfill {\em Septiembre 2016 - Junio 2022} \\
 %	PROJECTS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Proyectos}
-
-%------------------------------------------------
-
-\begin{rSubsection}{\href{https://github.com/alexl0/tfg}{Trabajo de Fin de Grado}}{Android, Linux}{}{}
+\begin{rSection}{Proyectos personales}
+\begin{rSubsection}{{Trabajo de Fin de Grado}}{Android, Linux}{}{}
 Auditoría de seguridad de las tarjetas de transporte público de España. Análisis de vulnerabilidades y alternativas.
 Calificación obtenida: 10.
 \end{rSubsection}
-
-\begin{rSubsection}{\href{https://chatwithyouwant.herokuapp.com}{Red Social}}{Spring Boot, MongoDB, JS}{}{}
-Esta red social permite iniciar sesión, agregar amigos, y chatear con ellos en un cliente creado con javascript con interacciones en tiempo real.
-Esta red social está subida a \href{https://chatwithyouwant.herokuapp.com}{este} servidor lista para usar, y funciona tanto para teléfonos móviles como para ordenadores.
-\end{rSubsection}
-
-
 \end{rSection}
 
 
@@ -169,20 +126,7 @@ Esta red social está subida a \href{https://chatwithyouwant.herokuapp.com}{este
 %	CURRENTLY LEARNING SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Aprendiendo ahora mismo}
 
-%------------------------------------------------
-
-\begin{rSubsection}{\href{http://www.abap.es/}{Javascript Frameworks}}{}{}{}
-React, Angular.
-\end{rSubsection}
-
-\begin{rSubsection}{\href{https://developer.android.com/}{Android development}}{}{}{}
-Desarrollo de aplicaciones nativas para Android.
-\end{rSubsection}
-
-
-\end{rSection}
 
 
 %----------------------------------------------------------------------------------------
@@ -192,7 +136,7 @@ Desarrollo de aplicaciones nativas para Android.
 \begin{rSection}{Puntos fuertes técnicos}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Lenguajes de programación & Java, HTML, CSS, JavaScript, Node, Spring, C, C++,\\&ElasticSearch, JPA, JDBC, .NET, Angular, React \\
+Lenguajes de programación & Java, HTML, CSS, JavaScript, Node, Spring, C, C++,\\&ElasticSearch, JPA, JDBC, .NET, Angular, React, \\& Desarrollo Android \\
 Protocolos \& APIs & XML, JSON, REST, SSH \\
 Bases de Datos & MySQL, PostgreSQL, MongoDB, Neo4J,\\
 Herramientas & Git, Eclipse, Vim \\
@@ -200,38 +144,5 @@ Sistemas operativos & CentOS, Ubuntu, Debian, Windows, Windows Server \\
 \end{tabular}
 
 \end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	ABOUT ME SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Sobre mí}
-
-Soy licenciado en Ingeniería Informática en la Universidad de Oviedo (España).
-Disfruto especialmente las bases de datos y el desarrollo de software en general, sin importar el lenguaje o el framework, siempre estoy dispuesto a aprender cosas nuevas.
-Estoy acostumbrado a trabajar bajo metodologías ágiles, manejando múltiples tareas al mismo tiempo.
-
-Me gustaría aportar creatividad al equipo, así como desarrollo de software, además de desarrollo personal.
-
-Ya sea hablar en público, o desarrollar y gestionar proyectos, siempre doy lo mejor de mi para hacer las cosas lo mejor posible en todo momento.
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	CONTACT SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Contacto}
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Móvil & 673803943 \\
-Gmail & alexleonper@gmail.com \\
-GitHub & \href{https://github.com/alexl0}{alexl0} \\
-Linkedin & \href{https://www.linkedin.com/in/leonper/}{leonper} \\
-\end{tabular}
-\end{rSection}
-
-
-
-
 
 \end{document}
